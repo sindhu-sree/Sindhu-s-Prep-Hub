@@ -1,11 +1,21 @@
-import React from 'react'
+import React from "react";
+import "./NavBar.css"; // Importing the CSS file
+import { Avatar } from "antd";
 
-const NavBar = () => {
+const NavBar: React.FC = () => {
   return (
-    <div>
-hhhhhhh
-    </div>
-  )
-}
+    <nav className="navbar">
+      {/* Left: Logo */}
+      <div className="logo">
+        <img src="/sindhu-logo.png" alt="Logo" />
+      </div>      
+      {/* Right: Avatar */}
+      <div className="user-profile">
+      <Avatar size="large" >S</Avatar>
 
-export default NavBar
+      </div>
+    </nav>
+  );
+};
+
+export default NavBar;
